@@ -6,7 +6,7 @@ import { Button, Icon, Layout, Text } from '@ui-kitten/components';
 import { discoverMovies } from 'actions/discoverActions';
 import styles from './styles';
 
-const MainScreen = () => {
+const MovieDetailScreen = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,8 +21,8 @@ const MainScreen = () => {
   );
 };
 
-MainScreen.navigationOptions = {
-  title: 'Discover',
+MovieDetailScreen.navigationOptions = {
+  title: 'Movie Detail',
 };
 
-export default MainScreen;
+export default MovieDetailScreen;
