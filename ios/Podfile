@@ -34,12 +34,12 @@ def base_pods
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 end
 
-target 'ReactNativeBase' do
-  # Pods for ReactNativeBase
+target 'Overwatch' do
+  # Pods for Overwatch
   base_pods
 
 
-  target 'ReactNativeBaseTests' do
+  target 'OverwatchTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -47,26 +47,26 @@ target 'ReactNativeBase' do
   use_native_modules!
 end
 
-target 'ReactNativeBase-Staging' do
-    # Pods for ReactNativeBase
+target 'Overwatch-Staging' do
+    # Pods for Overwatch
     base_pods
 
 
     use_native_modules!
 end
 
-target 'ReactNativeBase-Develop' do
-  # Pods for ReactNativeBase
+target 'Overwatch-Develop' do
+  # Pods for Overwatch
   base_pods
 
 
   use_native_modules!
 end
 
-target 'ReactNativeBase-tvOS' do
-  # Pods for ReactNativeBase-tvOS
+target 'Overwatch-tvOS' do
+  # Pods for Overwatch-tvOS
 
-  target 'ReactNativeBase-tvOSTests' do
+  target 'Overwatch-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

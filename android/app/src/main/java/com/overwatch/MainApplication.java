@@ -1,4 +1,4 @@
-package com.reactnativebase;
+package com.overwatch;
 
 import android.app.Application;
 
