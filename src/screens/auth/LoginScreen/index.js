@@ -3,10 +3,11 @@ import { useDispatch } from 'react-redux';
 import { Text, View, Button } from 'react-native';
 import { object } from 'prop-types';
 
-import LoginForm from 'components/LoginForm';
 import { login } from 'actions/userActions';
 import strings from 'locale';
 import { SIGN_UP_SCREEN } from 'constants/screens';
+
+import LoginForm from './LoginForm';
 import styles from './styles';
 
 const LoginScreen = memo(({ navigation }) => {

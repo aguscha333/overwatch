@@ -5,7 +5,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
 
-import LoginScreen from 'screens/LoginScreen';
+import LoginScreen from 'screens/auth/LoginScreen';
 import configureStore from 'store/configureStore';
 
 import '../test-helper';

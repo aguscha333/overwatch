@@ -4,7 +4,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import SignUpScreen from 'screens/SignUpScreen';
+import SignUpScreen from 'screens/auth/SignUpScreen';
 import configureStore from 'store/configureStore';
 
 import '../test-helper';

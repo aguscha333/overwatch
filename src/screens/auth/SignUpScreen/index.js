@@ -3,9 +3,10 @@ import { Text, View, Button } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { object } from 'prop-types';
 
-import SignUpForm from 'components/SignUpForm';
 import { signUp } from 'actions/userActions';
 import strings from 'locale';
+
+import SignUpForm from './SignUpForm';
 import styles from './styles';
 
 const SignUpScreen = memo(({ navigation }) => {
