@@ -64,6 +64,7 @@ class ApiService {
     try {
       const request = await this.requestInterceptors.applyFulfillHandlers(requestData);
       const response = await fetch(url, request);
+      console.log(response);
       if (!response) {
         throw new Error({ message: 'No response returned from fetch' });
       }

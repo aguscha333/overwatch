@@ -1,30 +1,26 @@
-import React, { useCallback } from 'react';
-import { View, Text, Button } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text } from 'react-native';
 import { useDispatch } from 'react-redux';
 
-import { logout } from 'actions/userActions';
-import strings from 'locale';
-import useSession from 'hooks/useSession';
+import { discoverMovies } from 'actions/discoverActions';
 import styles from './styles';
 
 const MainScreen = () => {
   const dispatch = useDispatch();
-  const logoutRequest = useCallback(() => dispatch(logout()), [dispatch]);
 
-  const {
-    user: { email },
-  } = useSession();
+  useEffect(() => {
+    dispatch(discoverMovies());
+  }, [dispatch]);
 
   return (
     <View style={styles.container}>
-      <Text>Hey{` ${email}` || ''}, you&#39;re logged in!</Text>
-      <Button onPress={logoutRequest} title={strings.MAIN_SCREEN.logout} />
+      <Text>Hello world</Text>
     </View>
   );
 };
 
 MainScreen.navigationOptions = {
-  title: strings.MAIN_SCREEN.title,
+  title: 'Discover',
 };
 
 export default MainScreen;

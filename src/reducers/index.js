@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import session from 'reducers/sessionReducer';
 import { statusReducer } from '@rootstrap/redux-tools';
+import discover from './discoverReducer';
 
 const AppReducer = combineReducers({
-  session,
+  discover,
   actionStatus: statusReducer,
 });
 
