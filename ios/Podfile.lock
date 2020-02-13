@@ -271,11 +271,8 @@ DEPENDENCIES:
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
-<<<<<<< HEAD
   - RNScreens (from `../node_modules/react-native-screens`)
-=======
   - RNSVG (from `../node_modules/react-native-svg`)
->>>>>>> ui and tabs
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -386,12 +383,8 @@ SPEC CHECKSUMS:
   RNGestureHandler: 911d3b110a7a233a34c4f800e7188a84b75319c6
   RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
   RNScreens: 5e4758109c6d35f9a009ce72af873df907548020
-  Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
-  RNCAsyncStorage: 2e2e3feb9bdadc752a026703d8c4065ca912e75a
-  RNGestureHandler: a4ddde1ffc6e590c8127b8b7eabfdade45475c74
-  RNReanimated: 1b52415c4302f198cb581282a0166690bad62c43
   RNSVG: 67f1f12dae2cef6ed59a42cae74a6b8f5a9e7b46
-  Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
+  Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
 PODFILE CHECKSUM: fbefe42186aceed9310ba10d4f7c07a3cbddbf9b
 

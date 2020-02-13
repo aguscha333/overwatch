@@ -16,14 +16,12 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* OverwatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OverwatchTests.m */; };
-		58D2595AAF38E65BD994883D /* libPods-Overwatch-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2208B4BC6FD13C3655D436F2 /* libPods-Overwatch-Staging.a */; };
-		6B61A298D68A4F6DFD9FDBCC /* libPods-Overwatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C7C84CAE6734BF690017FE /* libPods-Overwatch.a */; };
-		9B0243531F270CBB6E36495A /* libPods-Overwatch-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFF1A0A0D79A52FA343994E /* libPods-Overwatch-tvOSTests.a */; };
-		9CEB73B58FB152FDD74F0720 /* libPods-Overwatch-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44697982F9284E7E43F44305 /* libPods-Overwatch-tvOS.a */; };
-		A1BFCA82C7AE2AF4664AFB38 /* libPods-OverwatchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C7EBC07A2F299DF317F411 /* libPods-OverwatchTests.a */; };
-		BBCDE83BA965486201CF31AB /* libPods-Overwatch-Develop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1AB4DBFE1058BF55733D8B /* libPods-Overwatch-Develop.a */; };
-		D35AFCB0D169AD30C275822B /* libPods-Overwatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C7C84CAE6734BF690017FE /* libPods-Overwatch.a */; };
-		E77860054D22D4DDB9D5F9AA /* libPods-Overwatch-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5194B9636EC5B962F89DA5B8 /* libPods-Overwatch-Staging.a */; };
+		2EF8BFFD86027D926CC69662 /* libPods-Overwatch-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 895360B726BA5E5FAE3FC863 /* libPods-Overwatch-tvOSTests.a */; };
+		5BD0A3D318A362B8FFF98CBF /* libPods-Overwatch-Staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69859463F40C59A60F4CC890 /* libPods-Overwatch-Staging.a */; };
+		95C7D63FD0050AB68C143CE7 /* libPods-Overwatch-Develop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C992D953EDEF1F43381030 /* libPods-Overwatch-Develop.a */; };
+		99AF87374FB81D841C4511A6 /* libPods-Overwatch-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDC252CCC80C65D9CDA3047 /* libPods-Overwatch-tvOS.a */; };
+		9A319078EE5AD083072411C5 /* libPods-OverwatchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A75F18EFD664363371D466 /* libPods-OverwatchTests.a */; };
+		E96E609BE16FF76EDD02D862 /* libPods-Overwatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 057ED4752F56AFC28E231ACB /* libPods-Overwatch.a */; };
 		FE002AFE22E9DCD20027B199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		FE002AFF22E9DCD20027B199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		FE002B0322E9DCD20027B199 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -56,6 +54,8 @@
 		00E356EE1AD99517003FC87E /* OverwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* OverwatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverwatchTests.m; sourceTree = "<group>"; };
+		057ED4752F56AFC28E231ACB /* libPods-Overwatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE1775DEF875CB0B28BA170 /* Pods-Overwatch-Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Staging.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-Staging/Pods-Overwatch-Staging.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Overwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Overwatch/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Overwatch/AppDelegate.m; sourceTree = "<group>"; };
@@ -63,28 +63,26 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Overwatch/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Overwatch/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Overwatch/main.m; sourceTree = "<group>"; };
-		1C98C079CDC74151BC1BE98E /* Pods-Overwatch-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOSTests/Pods-Overwatch-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		1FF6942EBA95C3A6D7CF89DD /* Pods-Overwatch-Develop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Develop.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-Develop/Pods-Overwatch-Develop.debug.xcconfig"; sourceTree = "<group>"; };
+		201C231CBC2A319BA6640F75 /* Pods-Overwatch-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOSTests/Pods-Overwatch-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Overwatch-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overwatch-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Overwatch-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overwatch-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44697982F9284E7E43F44305 /* libPods-Overwatch-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5194B9636EC5B962F89DA5B8 /* libPods-Overwatch-Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFF1A0A0D79A52FA343994E /* libPods-Overwatch-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83ACE6892685D8C6AAE6DA9C /* Pods-Overwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch.release.xcconfig"; path = "Target Support Files/Pods-Overwatch/Pods-Overwatch.release.xcconfig"; sourceTree = "<group>"; };
-		8BE8208158E18B7F778E5A71 /* Pods-Overwatch-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOS/Pods-Overwatch-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		972824CB458A25B53AC1EFEA /* Pods-Overwatch-Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Staging.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-Staging/Pods-Overwatch-Staging.release.xcconfig"; sourceTree = "<group>"; };
-		A5F764061187CD576D860FC4 /* Pods-Overwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch/Pods-Overwatch.debug.xcconfig"; sourceTree = "<group>"; };
-		A6D74305879FCEDD3E81ED1B /* Pods-Overwatch-Develop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Develop.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-Develop/Pods-Overwatch-Develop.release.xcconfig"; sourceTree = "<group>"; };
-		ABEEF0B1DB8EDFD53517D32C /* Pods-Overwatch-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOSTests/Pods-Overwatch-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AE1AB4DBFE1058BF55733D8B /* libPods-Overwatch-Develop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-Develop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD532F9B2E00989E2D8BF49D /* Pods-OverwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchTests.release.xcconfig"; path = "Target Support Files/Pods-OverwatchTests/Pods-OverwatchTests.release.xcconfig"; sourceTree = "<group>"; };
-		C759D31818F4F72821F8604D /* Pods-Overwatch-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOS/Pods-Overwatch-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		DD77FD7C5108B7A4A649604F /* Pods-OverwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-OverwatchTests/Pods-OverwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E280833A393130671A73F396 /* Pods-Overwatch-Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Staging.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-Staging/Pods-Overwatch-Staging.debug.xcconfig"; sourceTree = "<group>"; };
-		E4C7EBC07A2F299DF317F411 /* libPods-OverwatchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OverwatchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDC252CCC80C65D9CDA3047 /* libPods-Overwatch-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D954DAAB83B73AE2685EEA0 /* Pods-Overwatch-Develop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Develop.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-Develop/Pods-Overwatch-Develop.release.xcconfig"; sourceTree = "<group>"; };
+		3E2EB7DB249E0D8F63FBAD71 /* Pods-Overwatch-Develop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Develop.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-Develop/Pods-Overwatch-Develop.debug.xcconfig"; sourceTree = "<group>"; };
+		4A4A7BE3A4C0054BFD969400 /* Pods-Overwatch-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOS/Pods-Overwatch-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		55D0555BF49E95BC9EBE49E3 /* Pods-Overwatch-Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-Staging.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-Staging/Pods-Overwatch-Staging.release.xcconfig"; sourceTree = "<group>"; };
+		654F0F5B049CBCDD9C2C89F8 /* Pods-Overwatch-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOSTests/Pods-Overwatch-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		69859463F40C59A60F4CC890 /* libPods-Overwatch-Staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-Staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD05D1A6867A7B5168F820F /* Pods-Overwatch-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-tvOS/Pods-Overwatch-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7A6C8E3FCA32EE3F90DB4374 /* Pods-OverwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-OverwatchTests/Pods-OverwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87C992D953EDEF1F43381030 /* libPods-Overwatch-Develop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-Develop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		895360B726BA5E5FAE3FC863 /* libPods-Overwatch-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A2F90064F67BC7D961A68E /* Pods-Overwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch/Pods-Overwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		B2A75F18EFD664363371D466 /* libPods-OverwatchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OverwatchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C0EDE3DAFE989C2171FC9B /* Pods-OverwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchTests.release.xcconfig"; path = "Target Support Files/Pods-OverwatchTests/Pods-OverwatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F7C7C84CAE6734BF690017FE /* libPods-Overwatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Overwatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71E59EA8AF860BE1F574B4B /* Pods-Overwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch.release.xcconfig"; path = "Target Support Files/Pods-Overwatch/Pods-Overwatch.release.xcconfig"; sourceTree = "<group>"; };
 		FE002B0922E9DCD20027B199 /* Overwatch-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overwatch-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE002B0A22E9DCD20027B199 /* Overwatch-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Overwatch-Staging-Info.plist"; path = "/Users/mauriciocousillas/projects/react-native-base/ios/Overwatch-Staging-Info.plist"; sourceTree = "<absolute>"; };
 		FE002B1A22EA13BF0027B199 /* Overwatch-Develop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Overwatch-Develop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BFCA82C7AE2AF4664AFB38 /* libPods-OverwatchTests.a in Frameworks */,
+				9A319078EE5AD083072411C5 /* libPods-OverwatchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D35AFCB0D169AD30C275822B /* libPods-Overwatch.a in Frameworks */,
-				6B61A298D68A4F6DFD9FDBCC /* libPods-Overwatch.a in Frameworks */,
+				E96E609BE16FF76EDD02D862 /* libPods-Overwatch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CEB73B58FB152FDD74F0720 /* libPods-Overwatch-tvOS.a in Frameworks */,
+				99AF87374FB81D841C4511A6 /* libPods-Overwatch-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0243531F270CBB6E36495A /* libPods-Overwatch-tvOSTests.a in Frameworks */,
+				2EF8BFFD86027D926CC69662 /* libPods-Overwatch-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D2595AAF38E65BD994883D /* libPods-Overwatch-Staging.a in Frameworks */,
-				E77860054D22D4DDB9D5F9AA /* libPods-Overwatch-Staging.a in Frameworks */,
+				5BD0A3D318A362B8FFF98CBF /* libPods-Overwatch-Staging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBCDE83BA965486201CF31AB /* libPods-Overwatch-Develop.a in Frameworks */,
+				95C7D63FD0050AB68C143CE7 /* libPods-Overwatch-Develop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,12 +177,12 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				F7C7C84CAE6734BF690017FE /* libPods-Overwatch.a */,
-				44697982F9284E7E43F44305 /* libPods-Overwatch-tvOS.a */,
-				5FFF1A0A0D79A52FA343994E /* libPods-Overwatch-tvOSTests.a */,
-				E4C7EBC07A2F299DF317F411 /* libPods-OverwatchTests.a */,
-				AE1AB4DBFE1058BF55733D8B /* libPods-Overwatch-Develop.a */,
-				5194B9636EC5B962F89DA5B8 /* libPods-Overwatch-Staging.a */,
+				057ED4752F56AFC28E231ACB /* libPods-Overwatch.a */,
+				87C992D953EDEF1F43381030 /* libPods-Overwatch-Develop.a */,
+				69859463F40C59A60F4CC890 /* libPods-Overwatch-Staging.a */,
+				2FDC252CCC80C65D9CDA3047 /* libPods-Overwatch-tvOS.a */,
+				895360B726BA5E5FAE3FC863 /* libPods-Overwatch-tvOSTests.a */,
+				B2A75F18EFD664363371D466 /* libPods-OverwatchTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,37 +227,20 @@
 		D61026C4A3CF4DDFB97A0F07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C759D31818F4F72821F8604D /* Pods-Overwatch-tvOS.debug.xcconfig */,
-				8BE8208158E18B7F778E5A71 /* Pods-Overwatch-tvOS.release.xcconfig */,
-				ABEEF0B1DB8EDFD53517D32C /* Pods-Overwatch-tvOSTests.debug.xcconfig */,
-				1C98C079CDC74151BC1BE98E /* Pods-Overwatch-tvOSTests.release.xcconfig */,
-				DD77FD7C5108B7A4A649604F /* Pods-OverwatchTests.debug.xcconfig */,
-				BD532F9B2E00989E2D8BF49D /* Pods-OverwatchTests.release.xcconfig */,
-				A5F764061187CD576D860FC4 /* Pods-Overwatch.debug.xcconfig */,
-				83ACE6892685D8C6AAE6DA9C /* Pods-Overwatch.release.xcconfig */,
-				E280833A393130671A73F396 /* Pods-Overwatch-Staging.debug.xcconfig */,
-				972824CB458A25B53AC1EFEA /* Pods-Overwatch-Staging.release.xcconfig */,
-				1FF6942EBA95C3A6D7CF89DD /* Pods-Overwatch-Develop.debug.xcconfig */,
-				A6D74305879FCEDD3E81ED1B /* Pods-Overwatch-Develop.release.xcconfig */,
+				97A2F90064F67BC7D961A68E /* Pods-Overwatch.debug.xcconfig */,
+				F71E59EA8AF860BE1F574B4B /* Pods-Overwatch.release.xcconfig */,
+				3E2EB7DB249E0D8F63FBAD71 /* Pods-Overwatch-Develop.debug.xcconfig */,
+				3D954DAAB83B73AE2685EEA0 /* Pods-Overwatch-Develop.release.xcconfig */,
+				0EE1775DEF875CB0B28BA170 /* Pods-Overwatch-Staging.debug.xcconfig */,
+				55D0555BF49E95BC9EBE49E3 /* Pods-Overwatch-Staging.release.xcconfig */,
+				6DD05D1A6867A7B5168F820F /* Pods-Overwatch-tvOS.debug.xcconfig */,
+				4A4A7BE3A4C0054BFD969400 /* Pods-Overwatch-tvOS.release.xcconfig */,
+				201C231CBC2A319BA6640F75 /* Pods-Overwatch-tvOSTests.debug.xcconfig */,
+				654F0F5B049CBCDD9C2C89F8 /* Pods-Overwatch-tvOSTests.release.xcconfig */,
+				7A6C8E3FCA32EE3F90DB4374 /* Pods-OverwatchTests.debug.xcconfig */,
+				E5C0EDE3DAFE989C2171FC9B /* Pods-OverwatchTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		FE49EE5322DE3E5700F7545F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE49EE5722DE3E5800F7545F /* libRNCAsyncStorage.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FE49EE9522DE496D00F7545F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE49EE9A22DE496D00F7545F /* libRNGestureHandler.a */,
-				FE49EE9C22DE496D00F7545F /* libRNGestureHandler-tvOS.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OverwatchTests" */;
 			buildPhases = (
-				E85214077ADDC0852F02FDB6 /* [CP] Check Pods Manifest.lock */,
+				ED8559C09E0AF38FC5CD25E3 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -290,7 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Overwatch" */;
 			buildPhases = (
-				37D0E53BA7A052DA1ACCEE02 /* [CP] Check Pods Manifest.lock */,
+				7BCEF999AFC5E5CC0B613396 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -310,7 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Overwatch-tvOS" */;
 			buildPhases = (
-				0204927EA819631EC89086FC /* [CP] Check Pods Manifest.lock */,
+				10078481CDA6F84F41978ECE /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -330,7 +309,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Overwatch-tvOSTests" */;
 			buildPhases = (
-				D97A05D59F5E54F4D781A792 /* [CP] Check Pods Manifest.lock */,
+				9003176E5BADA13EABA357C6 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -349,7 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE002B0622E9DCD20027B199 /* Build configuration list for PBXNativeTarget "Overwatch-Staging" */;
 			buildPhases = (
-				27E75E17105192B75AF11FF9 /* [CP] Check Pods Manifest.lock */,
+				B5661D4CD13CC45D4FE84069 /* [CP] Check Pods Manifest.lock */,
 				FE002AFC22E9DCD20027B199 /* Start Packager */,
 				FE002AFD22E9DCD20027B199 /* Sources */,
 				FE002B0022E9DCD20027B199 /* Frameworks */,
@@ -369,7 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE002B1722EA13BF0027B199 /* Build configuration list for PBXNativeTarget "Overwatch-Develop" */;
 			buildPhases = (
-				FE002B0C22EA13BF0027B199 /* [CP] Check Pods Manifest.lock */,
+				4696275D7AFBF121379DBE28 /* [CP] Check Pods Manifest.lock */,
 				FE002B0D22EA13BF0027B199 /* Start Packager */,
 				FE002B0E22EA13BF0027B199 /* Sources */,
 				FE002B1122EA13BF0027B199 /* Frameworks */,
@@ -500,7 +479,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		0204927EA819631EC89086FC /* [CP] Check Pods Manifest.lock */ = {
+		10078481CDA6F84F41978ECE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,28 +501,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27E75E17105192B75AF11FF9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Overwatch-Staging-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,7 +515,29 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		37D0E53BA7A052DA1ACCEE02 /* [CP] Check Pods Manifest.lock */ = {
+		4696275D7AFBF121379DBE28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Overwatch-Develop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCEF999AFC5E5CC0B613396 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,7 +559,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D97A05D59F5E54F4D781A792 /* [CP] Check Pods Manifest.lock */ = {
+		9003176E5BADA13EABA357C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -602,7 +581,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E85214077ADDC0852F02FDB6 /* [CP] Check Pods Manifest.lock */ = {
+		B5661D4CD13CC45D4FE84069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Overwatch-Staging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8559C09E0AF38FC5CD25E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -694,28 +695,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		FE002B0C22EA13BF0027B199 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Overwatch-Develop-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		FE002B0D22EA13BF0027B199 /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -835,7 +814,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD77FD7C5108B7A4A649604F /* Pods-OverwatchTests.debug.xcconfig */;
+			baseConfigurationReference = 7A6C8E3FCA32EE3F90DB4374 /* Pods-OverwatchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -858,7 +837,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD532F9B2E00989E2D8BF49D /* Pods-OverwatchTests.release.xcconfig */;
+			baseConfigurationReference = E5C0EDE3DAFE989C2171FC9B /* Pods-OverwatchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -878,7 +857,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5F764061187CD576D860FC4 /* Pods-Overwatch.debug.xcconfig */;
+			baseConfigurationReference = 97A2F90064F67BC7D961A68E /* Pods-Overwatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -901,7 +880,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83ACE6892685D8C6AAE6DA9C /* Pods-Overwatch.release.xcconfig */;
+			baseConfigurationReference = F71E59EA8AF860BE1F574B4B /* Pods-Overwatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -923,7 +902,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C759D31818F4F72821F8604D /* Pods-Overwatch-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 6DD05D1A6867A7B5168F820F /* Pods-Overwatch-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -951,7 +930,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BE8208158E18B7F778E5A71 /* Pods-Overwatch-tvOS.release.xcconfig */;
+			baseConfigurationReference = 4A4A7BE3A4C0054BFD969400 /* Pods-Overwatch-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -979,7 +958,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABEEF0B1DB8EDFD53517D32C /* Pods-Overwatch-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 201C231CBC2A319BA6640F75 /* Pods-Overwatch-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1006,7 +985,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C98C079CDC74151BC1BE98E /* Pods-Overwatch-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 654F0F5B049CBCDD9C2C89F8 /* Pods-Overwatch-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1132,7 +1111,7 @@
 		};
 		FE002B0722E9DCD20027B199 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E280833A393130671A73F396 /* Pods-Overwatch-Staging.debug.xcconfig */;
+			baseConfigurationReference = 0EE1775DEF875CB0B28BA170 /* Pods-Overwatch-Staging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1155,7 +1134,7 @@
 		};
 		FE002B0822E9DCD20027B199 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 972824CB458A25B53AC1EFEA /* Pods-Overwatch-Staging.release.xcconfig */;
+			baseConfigurationReference = 55D0555BF49E95BC9EBE49E3 /* Pods-Overwatch-Staging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1177,7 +1156,7 @@
 		};
 		FE002B1822EA13BF0027B199 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FF6942EBA95C3A6D7CF89DD /* Pods-Overwatch-Develop.debug.xcconfig */;
+			baseConfigurationReference = 3E2EB7DB249E0D8F63FBAD71 /* Pods-Overwatch-Develop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1200,7 +1179,7 @@
 		};
 		FE002B1922EA13BF0027B199 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6D74305879FCEDD3E81ED1B /* Pods-Overwatch-Develop.release.xcconfig */;
+			baseConfigurationReference = 3D954DAAB83B73AE2685EEA0 /* Pods-Overwatch-Develop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;

@@ -1,10 +1,10 @@
 import { createThunk } from '@rootstrap/redux-tools';
-import discoverService from 'services/discoverService';
+import discoverService from 'services/movieService';
 import parseError from 'utils/parseError';
 
-export const discoverMovies = createThunk('DISCOVER_MOVIES', async () => {
+export const discoverMovies = createThunk('DISCOVER_MOVIES', async page => {
   try {
-    const { data } = await discoverService.discoverMovies();
+    const { data } = await discoverService.discoverMovies(page);
     return data;
   } catch ({ data }) {
     throw parseError(data);

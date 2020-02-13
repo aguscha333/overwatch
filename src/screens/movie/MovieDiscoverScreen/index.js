@@ -1,22 +1,15 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
 
-import { Button, Icon, Layout, Text } from '@ui-kitten/components';
+import { Layout } from '@ui-kitten/components';
 
-import { discoverMovies } from 'actions/discoverActions';
+import { discoverMovies } from 'actions/movieActions';
+import Gallery from 'components/Gallery';
 import styles from './styles';
 
 const MovieDiscoverScreen = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(discoverMovies());
-  }, [dispatch]);
-
   return (
     <Layout style={styles.container}>
-      <Text>Hello world</Text>
-      <Button icon={() => <Icon name="activity-outline" />} />
+      <Gallery getter={discoverMovies} model="movie" />
     </Layout>
   );
 };

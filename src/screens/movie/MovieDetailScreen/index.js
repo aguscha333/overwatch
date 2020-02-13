@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { Button, Icon, Layout, Text } from '@ui-kitten/components';
 
-import { discoverMovies } from 'actions/discoverActions';
+import { discoverMovies } from 'actions/movieActions';
 import styles from './styles';
 
 const MovieDetailScreen = () => {

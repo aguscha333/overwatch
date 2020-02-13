@@ -1,18 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
 
 import { Button, Icon, Layout, Text } from '@ui-kitten/components';
 
-import { discoverMovies } from 'actions/discoverActions';
 import styles from './styles';
 
 const MainScreen = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(discoverMovies());
-  }, [dispatch]);
-
   return (
     <Layout style={styles.container}>
       <Text>Hello world</Text>

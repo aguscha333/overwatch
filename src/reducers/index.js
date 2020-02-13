@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { statusReducer } from '@rootstrap/redux-tools';
-import discover from './discoverReducer';
+import movie from './movieReducer';
 
 const AppReducer = combineReducers({
-  discover,
+  movie,
   actionStatus: statusReducer,
 });
 

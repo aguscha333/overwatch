@@ -1,16 +1,16 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
 import { TabBar, Tab } from '@ui-kitten/components';
-import { func, object } from 'prop-types';
+import { object } from 'prop-types';
 
-const TopTabBar = ({ onIndexChange, navigationState }) => {
+const TopTabBar = ({ navigation, state }) => {
   const onSelect = index => {
-    onIndexChange(index);
+    navigation.navigate(state.routeNames[index]);
   };
 
   return (
     <SafeAreaView>
-      <TabBar selectedIndex={navigationState.index} onSelect={onSelect}>
+      <TabBar selectedIndex={state.index} onSelect={onSelect}>
         <Tab title="Movies" />
         <Tab title="TV" />
       </TabBar>
@@ -19,8 +19,8 @@ const TopTabBar = ({ onIndexChange, navigationState }) => {
 };
 
 TopTabBar.propTypes = {
-  onIndexChange: func.isRequired,
-  navigationState: object.isRequired,
+  navigation: object.isRequired,
+  state: object.isRequired,
 };
 
 export default TopTabBar;

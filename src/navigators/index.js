@@ -1,19 +1,12 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
-import { APP_STACK } from 'constants/screens';
-
-import AppStack from './AppStack';
-
-const Stack = createStackNavigator();
+import AppTabs from './AppTabs';
 
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none">
-        <Stack.Screen name={APP_STACK} component={AppStack} />
-      </Stack.Navigator>
+      <AppTabs />
     </NavigationContainer>
   );
 };
