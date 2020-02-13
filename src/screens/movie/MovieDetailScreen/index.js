@@ -1,24 +1,31 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { number } from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { Button, Icon, Layout, Text } from '@ui-kitten/components';
+import { Layout, Text } from '@ui-kitten/components';
 
-import { discoverMovies } from 'actions/movieActions';
+import { getMovie } from 'actions/movieActions';
 import styles from './styles';
 
-const MovieDetailScreen = () => {
+const MovieDetailScreen = ({ id }) => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(discoverMovies());
-  }, [dispatch]);
+  const { detail } = useSelector(({ movie }) => movie);
 
+  useEffect(() => {
+    dispatch(getMovie(id));
+  }, [dispatch, id]);
+
+  const { title } = detail;
   return (
     <Layout style={styles.container}>
-      <Text>Hello world</Text>
-      <Button icon={() => <Icon name="activity-outline" />} />
+      <Text>{title}</Text>
     </Layout>
   );
+};
+
+MovieDetailScreen.propTypes = {
+  id: number.isRequired,
 };
 
 MovieDetailScreen.navigationOptions = {

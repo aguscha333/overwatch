@@ -1,6 +1,7 @@
 import { createReducer } from '@rootstrap/redux-tools';
 
-import { discoverMoviesSuccess, getMovieSuccess } from 'actions/movieActions';
+import { discoverSeriesSuccess, getSeriesSuccess } from 'actions/tvActions';
+
 import { detailSuccess, listSuccess } from './common';
 
 const initialState = {
@@ -12,6 +13,6 @@ const initialState = {
 };
 
 export default createReducer(initialState, {
-  [discoverMoviesSuccess]: listSuccess,
-  [getMovieSuccess]: detailSuccess,
+  [discoverSeriesSuccess]: listSuccess,
+  [getSeriesSuccess]: detailSuccess,
 });

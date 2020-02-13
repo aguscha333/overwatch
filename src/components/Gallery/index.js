@@ -7,7 +7,7 @@ import GalleryItem from './GalleryItem';
 
 import styles from './styles';
 
-const Gallery = ({ getter, model }) => {
+const Gallery = ({ getter, model, onItemPress }) => {
   const NUM_COLUMNS = 3;
 
   const [{ list }, handleLoadMore] = useGetList(getter, model);
@@ -15,7 +15,9 @@ const Gallery = ({ getter, model }) => {
     <List
       style={styles.list}
       data={list}
-      renderItem={({ item }) => <GalleryItem {...item} numColumns={NUM_COLUMNS} />}
+      renderItem={({ item }) => (
+        <GalleryItem {...item} numColumns={NUM_COLUMNS} onPress={onItemPress} />
+      )}
       keyExtractor={item => item.id}
       numColumns={NUM_COLUMNS}
       onEndReached={handleLoadMore}
@@ -28,6 +30,7 @@ const Gallery = ({ getter, model }) => {
 Gallery.propTypes = {
   getter: func.isRequired,
   model: string.isRequired,
+  onItemPress: func.isRequired,
 };
 
 export default Gallery;

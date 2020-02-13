@@ -12,7 +12,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  blacklist: ['movie'],
+  blacklist: ['movie', 'tv'],
 };
 
 export default function configureStore(initialState) {
