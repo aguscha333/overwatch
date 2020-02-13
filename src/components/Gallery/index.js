@@ -16,7 +16,7 @@ const Gallery = ({ getter, model, onItemPress }) => {
       style={styles.list}
       data={list}
       renderItem={({ item }) => (
-        <GalleryItem {...item} numColumns={NUM_COLUMNS} onPress={onItemPress} />
+        <GalleryItem {...item} numColumns={NUM_COLUMNS} onPress={() => onItemPress(item.id)} />
       )}
       keyExtractor={item => item.id}
       numColumns={NUM_COLUMNS}

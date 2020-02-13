@@ -9,14 +9,10 @@ import Gallery from 'components/Gallery';
 import styles from './styles';
 
 const MovieDiscoverScreen = ({ navigation }) => {
+  const onItemPress = id => navigation.push(MOVIE_DETAIL_SCREEN, { id });
   return (
     <Layout style={styles.container}>
-      <Gallery
-        key="movie"
-        getter={discoverMovies}
-        model="movie"
-        onItemPress={id => navigation.push(MOVIE_DETAIL_SCREEN, { id })}
-      />
+      <Gallery key="movie" getter={discoverMovies} model="movie" onItemPress={onItemPress} />
     </Layout>
   );
 };

@@ -1,13 +1,18 @@
 import React, { useEffect } from 'react';
-import { number } from 'prop-types';
+import { object } from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Layout, Text } from '@ui-kitten/components';
-
 import { getMovie } from 'actions/movieActions';
-import styles from './styles';
 
-const MovieDetailScreen = ({ id }) => {
+import SafeAreaTop from 'components/layout/SafeAreaTop';
+import Header from 'components/navigation/Header';
+
+const MovieDetailScreen = ({
+  navigation,
+  route: {
+    params: { id },
+  },
+}) => {
   const dispatch = useDispatch();
 
   const { detail } = useSelector(({ movie }) => movie);
@@ -17,15 +22,17 @@ const MovieDetailScreen = ({ id }) => {
   }, [dispatch, id]);
 
   const { title } = detail;
+  console.log(detail);
   return (
-    <Layout style={styles.container}>
-      <Text>{title}</Text>
-    </Layout>
+    <SafeAreaTop>
+      <Header title={title} onBackPress={navigation.goBack} />
+    </SafeAreaTop>
   );
 };
 
 MovieDetailScreen.propTypes = {
-  id: number.isRequired,
+  navigation: object.isRequired,
+  route: object.isRequired,
 };
 
 MovieDetailScreen.navigationOptions = {

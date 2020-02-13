@@ -1,7 +1,9 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import { TabBar, Tab } from '@ui-kitten/components';
 import { object } from 'prop-types';
+import { TabBar, Tab } from '@ui-kitten/components';
+
+import SafeAreaTop from 'components/layout/SafeAreaTop';
+import Header from 'components/navigation/Header';
 
 const TopTabBar = ({ navigation, state }) => {
   const onSelect = index => {
@@ -9,12 +11,13 @@ const TopTabBar = ({ navigation, state }) => {
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaTop>
+      <Header />
       <TabBar selectedIndex={state.index} onSelect={onSelect}>
         <Tab title="Movies" />
         <Tab title="TV" />
       </TabBar>
-    </SafeAreaView>
+    </SafeAreaTop>
   );
 };
 

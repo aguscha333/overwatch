@@ -9,7 +9,7 @@ import styles from './styles';
 const TvDiscoverScreen = () => {
   return (
     <Layout style={styles.container}>
-      <Gallery key="tv" getter={discoverSeries} model="tv" />
+      <Gallery key="tv" getter={discoverSeries} model="tv" onItemPress={() => null} />
     </Layout>
   );
 };

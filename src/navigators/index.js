@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
-import AppTabs from './AppTabs';
+import AppStack from './AppStack';
 
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <AppTabs />
+      <AppStack />
     </NavigationContainer>
   );
 };

@@ -11,11 +11,6 @@ export default {
     button: 'Sign in',
   },
 
-  MAIN_SCREEN: {
-    logout: 'Sign out',
-    title: 'Home Screen',
-  },
-
   SIGN_UP: {
     title: 'Sign up',
     email: 'Email',

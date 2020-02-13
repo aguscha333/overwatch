@@ -2,16 +2,16 @@ import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import TopTabBar from 'components/navigation/TopTabBar';
+import MovieDiscoverScreen from 'screens/movie/MovieDiscoverScreen';
 import TvDiscoverScreen from 'screens/tv/TvDiscoverScreen';
-import MovieStack from './MovieStack';
 
 const TopTab = createMaterialTopTabNavigator();
 
-const AppTabs = () => (
+const DiscoverTabs = () => (
   <TopTab.Navigator tabBar={props => <TopTabBar {...props} />}>
-    <TopTab.Screen name="Movies" component={MovieStack} />
+    <TopTab.Screen name="Movies" component={MovieDiscoverScreen} />
     <TopTab.Screen name="Tv" component={TvDiscoverScreen} />
   </TopTab.Navigator>
 );
 
-export default AppTabs;
+export default DiscoverTabs;
