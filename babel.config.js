@@ -16,6 +16,7 @@ module.exports = {
           reducers: './src/reducers',
           selectors: './src/selectors',
           store: './src/store',
+          styles: './src/styles',
           utils: './src/utils',
           navigators: './src/navigators',
           validations: './src/validations',

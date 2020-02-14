@@ -21,4 +21,4 @@ export const getMovie = createThunk('GET_MOVIE', async id => {
 });
 
 export const { success: discoverMoviesSuccess } = discoverMovies;
-export const { success: getMovieSuccess } = getMovie;
+export const { success: getMovieSuccess, reset: getMovieReset } = getMovie;

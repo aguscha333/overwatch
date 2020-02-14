@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react';
 import { object } from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
+import Image from 'react-native-scalable-image';
 
-import { getMovie } from 'actions/movieActions';
+import { getMovie, getMovieReset } from 'actions/movieActions';
+import imagePathGen from 'utils/imagePathGen';
 
-import SafeAreaTop from 'components/layout/SafeAreaTop';
-import Header from 'components/navigation/Header';
+import { Layout } from 'components/layout';
+import { Header } from 'components/navigation';
+import MainDetails from './MainDetails';
+
+import styles from './styles';
 
 const MovieDetailScreen = ({
   navigation,
@@ -19,14 +24,19 @@ const MovieDetailScreen = ({
 
   useEffect(() => {
     dispatch(getMovie(id));
+    return () => dispatch(getMovieReset());
   }, [dispatch, id]);
 
-  const { title } = detail;
-  console.log(detail);
+  const { backdropPath } = detail;
+
   return (
-    <SafeAreaTop>
-      <Header title={title} onBackPress={navigation.goBack} />
-    </SafeAreaTop>
+    <Layout style={styles.container}>
+      <Header onBackPress={navigation.goBack} transparent />
+
+      <Image style={styles.image} source={imagePathGen(backdropPath)} />
+
+      <MainDetails {...detail} />
+    </Layout>
   );
 };
 

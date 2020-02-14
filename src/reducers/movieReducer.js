@@ -1,7 +1,7 @@
 import { createReducer } from '@rootstrap/redux-tools';
 
-import { discoverMoviesSuccess, getMovieSuccess } from 'actions/movieActions';
-import { detailSuccess, listSuccess } from './common';
+import { discoverMoviesSuccess, getMovieSuccess, getMovieReset } from 'actions/movieActions';
+import { detailSuccess, detailReset, listSuccess } from './common';
 
 const initialState = {
   page: 1,
@@ -14,4 +14,5 @@ const initialState = {
 export default createReducer(initialState, {
   [discoverMoviesSuccess]: listSuccess,
   [getMovieSuccess]: detailSuccess,
+  [getMovieReset]: detailReset,
 });

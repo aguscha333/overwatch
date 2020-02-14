@@ -8,3 +8,7 @@ export const listSuccess = (state, { payload: { page, totalPages, totalResults, 
 export const detailSuccess = (state, { payload }) => {
   state.detail = payload;
 };
+
+export const detailReset = state => {
+  state.detail = {};
+};

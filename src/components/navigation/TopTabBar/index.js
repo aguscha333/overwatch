@@ -2,8 +2,8 @@ import React from 'react';
 import { object } from 'prop-types';
 import { TabBar, Tab } from '@ui-kitten/components';
 
-import SafeAreaTop from 'components/layout/SafeAreaTop';
-import Header from 'components/navigation/Header';
+import { SafeAreaTop } from 'components/layout';
+import Header from '../Header';
 
 const TopTabBar = ({ navigation, state }) => {
   const onSelect = index => {
@@ -12,7 +12,7 @@ const TopTabBar = ({ navigation, state }) => {
 
   return (
     <SafeAreaTop>
-      <Header />
+      <Header title="OVERWATCH" />
       <TabBar selectedIndex={state.index} onSelect={onSelect}>
         <Tab title="Movies" />
         <Tab title="TV" />

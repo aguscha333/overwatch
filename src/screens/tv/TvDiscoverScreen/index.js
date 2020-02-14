@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { Layout } from '@ui-kitten/components';
-
 import { discoverSeries } from 'actions/tvActions';
+
+import { Layout } from 'components/layout';
 import Gallery from 'components/Gallery';
+
 import styles from './styles';
 
 const TvDiscoverScreen = () => {

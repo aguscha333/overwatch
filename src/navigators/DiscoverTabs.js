@@ -1,7 +1,7 @@
 import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import TopTabBar from 'components/navigation/TopTabBar';
+import { TopTabBar } from 'components/navigation';
 import MovieDiscoverScreen from 'screens/movie/MovieDiscoverScreen';
 import TvDiscoverScreen from 'screens/tv/TvDiscoverScreen';
 

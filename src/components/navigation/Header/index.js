@@ -1,26 +1,34 @@
 import React from 'react';
-import { func, string } from 'prop-types';
+import { bool, func, string } from 'prop-types';
+import { View } from 'react-native';
 import { TopNavigation } from '@ui-kitten/components';
 
 import BackAction from './BackAction';
 
-const Header = ({ title, onBackPress }) => {
+import styles from './styles';
+
+const Header = ({ title, onBackPress, transparent }) => {
   return (
-    <TopNavigation
-      leftControl={onBackPress ? <BackAction onPress={onBackPress} /> : undefined}
-      alignment="center"
-      title={title}
-    />
+    <View style={transparent ? styles.floating : {}}>
+      <TopNavigation
+        leftControl={onBackPress ? <BackAction onPress={onBackPress} /> : undefined}
+        alignment="center"
+        title={title}
+        titleStyle={styles.title}
+        style={transparent && { backgroundColor: 'transparent' }}
+      />
+    </View>
   );
 };
 
 Header.propTypes = {
   title: string,
   onBackPress: func,
+  transparent: bool,
 };
 
 Header.defaultProps = {
-  title: 'Overwatch',
+  transparent: false,
 };
 
 export default Header;
