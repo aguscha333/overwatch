@@ -3,7 +3,7 @@ import React from 'react';
 import { discoverSeries } from 'actions/tvActions';
 
 import { Layout } from 'components/layout';
-import Gallery from 'components/Gallery';
+import { Gallery } from 'components/listers';
 
 import styles from './styles';
 

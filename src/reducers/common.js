@@ -12,3 +12,11 @@ export const detailSuccess = (state, { payload }) => {
 export const detailReset = state => {
   state.detail = {};
 };
+
+export const creditsSuccess = (state, { payload }) => {
+  state.credits = payload;
+};
+
+export const creditsReset = state => {
+  state.credits = {};
+};

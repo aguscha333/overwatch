@@ -9,6 +9,10 @@ class MovieService {
   getMovie(id) {
     return api.get(applyQueryParams(`/movie/${id}`));
   }
+
+  getMovieCredits(id) {
+    return api.get(applyQueryParams(`/movie/${id}/credits`));
+  }
 }
 
 export default new MovieService();
