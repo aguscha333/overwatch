@@ -1,4 +1,5 @@
+import Genre from './Genre';
 import Movie from './Movie';
 import Person from './Person';
 
-export { Movie, Person };
+export { Genre, Movie, Person };

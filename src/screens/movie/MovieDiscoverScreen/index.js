@@ -4,8 +4,8 @@ import { object } from 'prop-types';
 import { discoverMovies } from 'actions/movieActions';
 import { MOVIE_DETAIL_SCREEN } from 'constants/screens';
 
-import { Layout } from 'components/layout';
-import { Gallery } from 'components/lists/generic';
+import { Layout } from 'components/ui/layout';
+import { Gallery } from 'components/ui/listers';
 
 import styles from './styles';
 

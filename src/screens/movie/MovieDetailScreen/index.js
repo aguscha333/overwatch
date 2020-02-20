@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { object } from 'prop-types';
 import { ScrollView } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
@@ -22,11 +22,10 @@ import { SCREEN_WIDTH } from 'constants/dimensions';
 import Image from 'react-native-scalable-image';
 import { Text } from '@ui-kitten/components';
 import Skeleton from 'react-native-skeleton-content-nonexpo';
-import { Box, Layout } from 'components/layout';
+import { Box, Layout } from 'components/ui/layout';
+import { Showcase } from 'components/ui/listers';
 import { Header } from 'components/navigation';
-import { Genres } from 'components/lists';
-import { Movie, Person } from 'components/lists/entities';
-import { Showcase } from 'components/lists/generic';
+import { Genre, Movie, Person } from 'components/lists/entities';
 import MainDetails from './MainDetails';
 
 import styles from './styles';
@@ -43,16 +42,24 @@ const MovieDetailScreen = ({
   const loadingSimilar = useLoading(GET_SIMILAR_MOVIES);
   const { detail, credits, similar } = useSelector(({ movie }) => movie);
 
+  const [currentId, setCurrentId] = useState(id);
+
+  const getData = useCallback(() => {
+    dispatch(getMovie(currentId));
+    dispatch(getMovieCredits(currentId));
+    dispatch(getSimilarMovies(currentId));
+  }, [dispatch, currentId]);
+
+  const resetData = useCallback(() => {
+    dispatch(getMovieReset());
+    dispatch(getMovieCreditsReset());
+    dispatch(getSimilarMoviesReset());
+  }, [dispatch]);
+
   useEffect(() => {
-    dispatch(getMovie(id));
-    dispatch(getMovieCredits(id));
-    dispatch(getSimilarMovies(id));
-    return () => {
-      dispatch(getMovieReset());
-      dispatch(getMovieCreditsReset());
-      dispatch(getSimilarMoviesReset());
-    };
-  }, [dispatch, id]);
+    getData();
+    return () => resetData();
+  }, [getData, resetData]);
 
   const { backdropPath, genres, overview } = detail;
   const { cast } = credits;
@@ -61,7 +68,7 @@ const MovieDetailScreen = ({
   return (
     <Layout style={styles.container}>
       <Header onBackPress={navigation.goBack} transparent />
-      <ScrollView>
+      <ScrollView contentContainerStyle={styles.contentContainer}>
         <Skeleton
           isLoading={loadingDetails}
           containerStyle={{ alignSelf: 'stretch', height: 300, overflow: 'hidden' }}
@@ -74,13 +81,14 @@ const MovieDetailScreen = ({
           {!isEmpty(detail) && <MainDetails {...detail} />}
           <Text style={styles.overview}>{overview}</Text>
         </Box>
-        <Genres data={genres} />
+        <Showcase data={genres} isLoading={loadingDetails} Item={Genre} />
         <Showcase title="Cast" data={cast} isLoading={loadingCredits} Item={Person} />
         <Showcase
           title="Similar Movies"
           data={similarMovies}
           isLoading={loadingSimilar}
           Item={Movie}
+          onItemPress={setCurrentId}
         />
       </ScrollView>
     </Layout>

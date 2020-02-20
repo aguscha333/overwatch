@@ -3,11 +3,18 @@ import { array, bool, func, string } from 'prop-types';
 import { FlatList } from 'react-native';
 
 import { Text } from '@ui-kitten/components';
-import { Box } from 'components/layout';
+import { Box } from 'components/ui/layout';
 
 import styles from './styles';
 
-const HorizontalList = ({ title, data, Item, showsHorizontalScrollIndicator, ...restProps }) => (
+const HorizontalList = ({
+  title,
+  data,
+  Item,
+  onItemPress,
+  showsHorizontalScrollIndicator,
+  ...restProps
+}) => (
   <Box style={styles.container}>
     {!!title && (
       <Text style={styles.title} category="h6">
@@ -17,7 +24,7 @@ const HorizontalList = ({ title, data, Item, showsHorizontalScrollIndicator, ...
     <FlatList
       contentContainerStyle={styles.insets}
       data={data}
-      renderItem={({ item }) => <Item {...item} />}
+      renderItem={({ item }) => <Item {...item} onPress={onItemPress} />}
       keyExtractor={item => item.id.toString()}
       horizontal
       showsHorizontalScrollIndicator={showsHorizontalScrollIndicator}
@@ -30,6 +37,7 @@ HorizontalList.propTypes = {
   title: string,
   data: array,
   Item: func.isRequired,
+  onItemPress: func,
   showsHorizontalScrollIndicator: bool,
 };
 

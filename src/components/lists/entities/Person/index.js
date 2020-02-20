@@ -8,7 +8,7 @@ import { Icon, Text, useStyleSheet, useTheme } from '@ui-kitten/components';
 
 import themedStyles from './styles';
 
-const CastMember = ({ name, profilePath }) => {
+const Person = ({ name, profilePath }) => {
   const styles = useStyleSheet(themedStyles);
   const theme = useTheme();
 
@@ -26,6 +26,6 @@ const CastMember = ({ name, profilePath }) => {
   );
 };
 
-CastMember.propTypes = { name: string.isRequired, profilePath: string.isRequired };
+Person.propTypes = { name: string.isRequired, profilePath: string };
 
-export default CastMember;
+export default Person;

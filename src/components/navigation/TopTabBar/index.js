@@ -2,7 +2,7 @@ import React from 'react';
 import { object } from 'prop-types';
 import { TabBar, Tab } from '@ui-kitten/components';
 
-import { SafeAreaTop } from 'components/layout';
+import { SafeAreaTop } from 'components/ui/layout';
 import Header from '../Header';
 
 const TopTabBar = ({ navigation, state }) => {

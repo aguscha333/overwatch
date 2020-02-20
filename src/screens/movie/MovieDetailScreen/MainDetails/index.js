@@ -1,12 +1,12 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { number, string } from 'prop-types';
 
 import imagePathGen from 'utils/imagePathGen';
 
 import { Card, Text } from '@ui-kitten/components';
 import Image from 'react-native-scalable-image';
-import { Box, Row } from 'components/layout';
-import { Label } from 'components/qualifiers';
+import { Box, Row } from 'components/ui/layout';
+import { Label } from 'components/ui/qualifiers';
 
 import styles from './styles';
 
@@ -34,8 +34,8 @@ MainDetails.propTypes = {
   title: string.isRequired,
   posterPath: string.isRequired,
   status: string.isRequired,
-  voteAverage: string.isRequired,
-  runtime: string.isRequired,
+  voteAverage: number.isRequired,
+  runtime: number.isRequired,
 };
 
 export default MainDetails;
