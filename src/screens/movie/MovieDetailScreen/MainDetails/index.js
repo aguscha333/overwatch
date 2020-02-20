@@ -10,7 +10,7 @@ import { Label } from 'components/qualifiers';
 
 import styles from './styles';
 
-const MainDetails = ({ title, posterPath, status }) => (
+const MainDetails = ({ title, posterPath, status, voteAverage, runtime }) => (
   <Box style={styles.outerContainer}>
     <Card style={styles.container}>
       <Row>
@@ -19,7 +19,11 @@ const MainDetails = ({ title, posterPath, status }) => (
           <Text style={styles.title} category="h6">
             {title}
           </Text>
-          <Label>{status}</Label>
+          <Row>
+            <Label style={styles.label}>{status}</Label>
+            <Label style={styles.label}>{voteAverage}/10</Label>
+            <Label style={styles.label}>{runtime} min</Label>
+          </Row>
         </Box>
       </Row>
     </Card>
@@ -30,6 +34,8 @@ MainDetails.propTypes = {
   title: string.isRequired,
   posterPath: string.isRequired,
   status: string.isRequired,
+  voteAverage: string.isRequired,
+  runtime: string.isRequired,
 };
 
 export default MainDetails;

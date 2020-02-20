@@ -32,6 +32,17 @@ export const getMovieCredits = createThunk('GET_MOVIE_CREDITS', async id => {
   }
 });
 
+export const GET_SIMILAR_MOVIES = 'GET_SIMILAR_MOVIES';
+export const getSimilarMovies = createThunk('GET_SIMILAR_MOVIES', async id => {
+  try {
+    const { data } = await movieService.getSimilarMovies(id);
+    return data;
+  } catch ({ data }) {
+    throw parseError(data);
+  }
+});
+
 export const { success: discoverMoviesSuccess } = discoverMovies;
 export const { success: getMovieSuccess, reset: getMovieReset } = getMovie;
 export const { success: getMovieCreditsSuccess, reset: getMovieCreditsReset } = getMovieCredits;
+export const { success: getSimilarMoviesSuccess, reset: getSimilarMoviesReset } = getSimilarMovies;

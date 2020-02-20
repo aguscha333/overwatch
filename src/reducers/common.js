@@ -20,3 +20,11 @@ export const creditsSuccess = (state, { payload }) => {
 export const creditsReset = state => {
   state.credits = {};
 };
+
+export const similarSuccess = (state, { payload }) => {
+  state.similar = payload;
+};
+
+export const similarReset = state => {
+  state.similar = {};
+};

@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   container: { position: 'absolute', top: -40, left: 0, right: 0, padding: 0 },
   information: { paddingHorizontal: 10, alignItems: 'flex-start', flex: 1 },
   title: { marginBottom: 7, flexWrap: 'wrap' },
+  label: { marginRight: 5 },
 });
 
 export default styles;

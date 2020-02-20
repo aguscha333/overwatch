@@ -6,8 +6,18 @@ import {
   getMovieReset,
   getMovieCreditsSuccess,
   getMovieCreditsReset,
+  getSimilarMoviesSuccess,
+  getSimilarMoviesReset,
 } from 'actions/movieActions';
-import { detailSuccess, detailReset, creditsSuccess, creditsReset, listSuccess } from './common';
+import {
+  detailSuccess,
+  detailReset,
+  creditsSuccess,
+  creditsReset,
+  similarSuccess,
+  similarReset,
+  listSuccess,
+} from './common';
 
 const initialState = {
   page: 1,
@@ -16,6 +26,7 @@ const initialState = {
   list: [],
   detail: {},
   credits: {},
+  similar: [],
 };
 
 export default createReducer(initialState, {
@@ -24,4 +35,6 @@ export default createReducer(initialState, {
   [getMovieReset]: detailReset,
   [getMovieCreditsSuccess]: creditsSuccess,
   [getMovieCreditsReset]: creditsReset,
+  [getSimilarMoviesSuccess]: similarSuccess,
+  [getSimilarMoviesReset]: similarReset,
 });

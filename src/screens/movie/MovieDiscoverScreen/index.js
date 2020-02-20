@@ -5,7 +5,7 @@ import { discoverMovies } from 'actions/movieActions';
 import { MOVIE_DETAIL_SCREEN } from 'constants/screens';
 
 import { Layout } from 'components/layout';
-import { Gallery } from 'components/listers';
+import { Gallery } from 'components/lists/generic';
 
 import styles from './styles';
 
